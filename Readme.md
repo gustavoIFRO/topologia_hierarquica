@@ -94,7 +94,7 @@ Para a realização dos testes de comunicação via comando `ping`, foi configur
 
 ## 👤 Autor
 
-* **Aluno**: [Seu Nome Aqui]
+* **Aluno**: Gustavo Barbosa Mulin
 * **Curso**: CST em Redes de Computadores
-* **Instituição**: Instituto Federal de Rondônia (IFRO)[cite: 1]
-* **Disciplina**: Comutação de Redes Locais[cite: 1]
+* **Instituição**: Instituto Federal de Rondônia (IFRO)
+* **Disciplina**: Comutação de Redes Locais
