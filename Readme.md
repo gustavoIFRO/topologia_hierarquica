@@ -1,14 +1,14 @@
 # Simulação de Rede Hierárquica LAN (Cisco Packet Tracer)
 
-Este repositório contém o projeto e a documentação para a **Avaliação 04 - Prática de Simulação de Ambiente Hierárquico**, desenvolvida para a disciplina de **Comutação de Redes Locais** do curso Superior de Tecnologia em Redes de Computadores do **Instituto Federal de Rondônia (IFRO)**[cite: 1].
+Este repositório contém o projeto e a documentação para a **Avaliação 04 - Prática de Simulação de Ambiente Hierárquico**, desenvolvida para a disciplina de **Comutação de Redes Locais** do curso Superior de Tecnologia em Redes de Computadores do **Instituto Federal de Rondônia (IFRO)**.
 
 ---
 
 ## 📌 Visão Geral do Projeto
 
-O objetivo desta atividade é projetar a topologia física de uma rede local (LAN) utilizando o modelo de três camadas (*Core*, *Distribution* e *Access/Acesso*), garantindo conceitos de **escalabilidade**, **hierarquia**, **redundância** e **disponibilidade**, alinhados aos padrões IEEE 802.3[cite: 1].
+O objetivo desta atividade é projetar a topologia física de uma rede local (LAN) utilizando o modelo de três camadas (*Core*, *Distribution* e *Access/Acesso*), garantindo conceitos de **escalabilidade**, **hierarquia**, **redundância** e **disponibilidade**, alinhados aos padrões IEEE 802.3.
 
-A topologia segue estritamente o requisito 5 do roteiro[cite: 2], onde cada switch de núcleo conecta-se **individualmente** ao seu respectivo switch de distribuição por meio de 2 links de fibra óptica (sem conexões cruzadas). Além disso, foram configurados os endereços IP em todos os dispositivos finais para validação do teste de conectividade (item extra)[cite: 2].
+A topologia segue estritamente o requisito 5 do roteiro[cite: 2], onde cada switch de núcleo conecta-se **individualmente** ao seu respectivo switch de distribuição por meio de 2 links de fibra óptica (sem conexões cruzadas). Além disso, foram configurados os endereços IP em todos os dispositivos finais para validação do teste de conectividade (item extra).
 
 ---
 
@@ -26,12 +26,12 @@ A arquitetura respeita os requisitos especificados e a divisão hierárquica rec
 
 ### 1. Camada de Roteamento / Saída
 * **1x Roteador Cisco 1941 (`Router1`)**:
-  * Conectado por 2 interfaces FastEthernet, interligando-se individualmente aos dois switches de núcleo (`Multilayer Switch2` e `Multilayer Switch0`)[cite: 2].
+  * Conectado por 2 interfaces FastEthernet, interligando-se individualmente aos dois switches de núcleo (`Multilayer Switch2` e `Multilayer Switch0`).
 
 ### 2. Camada de Núcleo (Core Layer)
 * **2x Switches Multicamada (`Multilayer Switch2` e `Multilayer Switch0`)**:
   * **Ligação entre Switches de Núcleo**: Interligados por **4 links físicos de GigabitEthernet (1 Gbps cada)**, estruturados para suportar futura ativação de **Link Aggregation / EtherChannel de 4 Gbps**[cite: 2].
-  * **Conexão com a Distribuição**: Conectados **individualmente** a dois switches de distribuição através de pares de **Fibra Óptica** (2 links de 1 Gbps por par), estruturados para futura ativação de **Link Aggregation de 2 Gbps**[cite: 2].
+  * **Conexão com a Distribuição**: Conectados **individualmente** a dois switches de distribuição através de pares de **Fibra Óptica** (2 links de 1 Gbps por par), estruturados para futura ativação de **Link Aggregation de 2 Gbps**.
 
 ### 3. Camada de Distribuição (Distribution Layer)
 * **2x Switches Multicamada (`Multilayer Switch3` e `Multilayer Switch1`)**:
@@ -41,18 +41,18 @@ A arquitetura respeita os requisitos especificados e a divisão hierárquica rec
 
 ### 4. Camada de Acesso / Borda (Access Layer)
 * **4x Switches de Acesso (`Switch13`, `Switch14`, `Switch15`, `Switch16` - Modelo 2950-24)**:
-  * Conectados diretamente aos switches de distribuição de forma simples, sem recursos de redundância[cite: 2].
+  * Conectados diretamente aos switches de distribuição de forma simples, sem recursos de redundância.
 
 ### 5. Dispositivos Finais (End Devices)
 * **4x Desktops (PCs)**: `PC0`, `PC1`, `PC2`, `PC3` (conectados aos switches `Switch13` e `Switch14`)[cite: 2].
 * **4x Notebooks (Laptops)**: `Laptop0`, `Laptop1`, `Laptop2`, `Laptop3` (conectados aos switches `Switch15` e `Switch16`)[cite: 2].
-* **1x Servidor (`Server0`)**: Conectado diretamente ao `Switch16`[cite: 2].
+* **1x Servidor (`Server0`)**: Conectado diretamente ao `Switch16`.
 
 ---
 
 ## 🌐 Endereçamento IP e Testes de Conectividade (Atividade Extra - +10%)
 
-Para a realização dos testes de comunicação via comando `ping`, foi configurada a sub-rede **192.168.1.0/24** em todos os hosts finais da rede[cite: 2].
+Para a realização dos testes de comunicação via comando `ping`, foi configurada a sub-rede **192.168.1.0/24** em todos os hosts finais da rede.
 
 ### Tabela de Endereçamento IP
 
@@ -88,7 +88,7 @@ Para a realização dos testes de comunicação via comando `ping`, foi configur
 
 * `README.md`: Documentação detalhada do projeto.
 * `topologia_hierarquica.pkt`: Arquivo do Cisco Packet Tracer.
-* `image_ee2249.png`: Imagem da topologia exibida nesta documentação.
+* `Topologia_hierarquica.png`: Imagem da topologia exibida nesta documentação.
 
 ---
 
