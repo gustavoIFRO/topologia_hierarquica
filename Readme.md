@@ -8,7 +8,7 @@ Este repositório contém o projeto e a documentação para a **Avaliação 04 -
 
 O objetivo desta atividade é projetar a topologia física de uma rede local (LAN) utilizando o modelo de três camadas (*Core*, *Distribution* e *Access/Acesso*), garantindo conceitos de **escalabilidade**, **hierarquia**, **redundância** e **disponibilidade**, alinhados aos padrões IEEE 802.3.
 
-A topologia segue estritamente o requisito 5 do roteiro[cite: 2], onde cada switch de núcleo conecta-se **individualmente** ao seu respectivo switch de distribuição por meio de 2 links de fibra óptica (sem conexões cruzadas). Além disso, foram configurados os endereços IP em todos os dispositivos finais para validação do teste de conectividade (item extra).
+A topologia segue estritamente o requisito 5 do roteiro, onde cada switch de núcleo conecta-se **individualmente** ao seu respectivo switch de distribuição por meio de 2 links de fibra óptica (sem conexões cruzadas). Além disso, foram configurados os endereços IP em todos os dispositivos finais para validação do teste de conectividade (item extra).
 
 ---
 
@@ -30,7 +30,7 @@ A arquitetura respeita os requisitos especificados e a divisão hierárquica rec
 
 ### 2. Camada de Núcleo (Core Layer)
 * **2x Switches Multicamada (`Multilayer Switch2` e `Multilayer Switch0`)**:
-  * **Ligação entre Switches de Núcleo**: Interligados por **4 links físicos de GigabitEthernet (1 Gbps cada)**, estruturados para suportar futura ativação de **Link Aggregation / EtherChannel de 4 Gbps**[cite: 2].
+  * **Ligação entre Switches de Núcleo**: Interligados por **4 links físicos de GigabitEthernet (1 Gbps cada)**, estruturados para suportar futura ativação de **Link Aggregation / EtherChannel de 4 Gbps**.
   * **Conexão com a Distribuição**: Conectados **individualmente** a dois switches de distribuição através de pares de **Fibra Óptica** (2 links de 1 Gbps por par), estruturados para futura ativação de **Link Aggregation de 2 Gbps**.
 
 ### 3. Camada de Distribuição (Distribution Layer)
@@ -44,8 +44,8 @@ A arquitetura respeita os requisitos especificados e a divisão hierárquica rec
   * Conectados diretamente aos switches de distribuição de forma simples, sem recursos de redundância.
 
 ### 5. Dispositivos Finais (End Devices)
-* **4x Desktops (PCs)**: `PC0`, `PC1`, `PC2`, `PC3` (conectados aos switches `Switch13` e `Switch14`)[cite: 2].
-* **4x Notebooks (Laptops)**: `Laptop0`, `Laptop1`, `Laptop2`, `Laptop3` (conectados aos switches `Switch15` e `Switch16`)[cite: 2].
+* **4x Desktops (PCs)**: `PC0`, `PC1`, `PC2`, `PC3` (conectados aos switches `Switch13` e `Switch14`).
+* **4x Notebooks (Laptops)**: `Laptop0`, `Laptop1`, `Laptop2`, `Laptop3` (conectados aos switches `Switch15` e `Switch16`).
 * **1x Servidor (`Server0`)**: Conectado diretamente ao `Switch16`.
 
 ---
@@ -74,13 +74,13 @@ Para a realização dos testes de comunicação via comando `ping`, foi configur
 
 | Requisito do Roteiro | Status | Descrição |
 | :--- | :---: | :--- |
-| Estrutura Hierárquica Visível (Núcleo, Distribuição e Borda)[cite: 2] | ✅ | Organizado em 3 níveis claros na área de trabalho. |
-| Roteador com 2 interfaces FastEthernet ligado a 2 switches[cite: 2] | ✅ | `Router1` conectado com 2 links FastEthernet. |
-| Ligação física para Link Aggregation de 4Gbps no Núcleo[cite: 2] | ✅ | 4 cabos de 1Gbps interligando os switches de núcleo. |
-| Ligação por Fibra Óptica (Link Aggregation 2Gbps) Core-Distribuição[cite: 2] | ✅ | Conexão individual via 2 links de fibra por switch de distribuição. |
-| 4 Switches de Borda sem redundância[cite: 2] | ✅ | Switches 2950-24 interligando os clientes finais. |
-| Dispositivos finais (4 PCs, 4 Laptops, 1 Servidor)[cite: 2] | ✅ | 9 dispositivos finais conectados com cabo metálico. |
-| **Extra**: Endereçamento IP e Teste via `ping` (+10%)[cite: 2] | ✅ | Todos os hosts configurados e se comunicando com sucesso. |
+| Estrutura Hierárquica Visível (Núcleo, Distribuição e Borda) | ✅ | Organizado em 3 níveis claros na área de trabalho. |
+| Roteador com 2 interfaces FastEthernet ligado a 2 switches | ✅ | `Router1` conectado com 2 links FastEthernet. |
+| Ligação física para Link Aggregation de 4Gbps no Núcleo | ✅ | 4 cabos de 1Gbps interligando os switches de núcleo. |
+| Ligação por Fibra Óptica (Link Aggregation 2Gbps) Core-Distribuição | ✅ | Conexão individual via 2 links de fibra por switch de distribuição. |
+| 4 Switches de Borda sem redundância | ✅ | Switches 2950-24 interligando os clientes finais. |
+| Dispositivos finais (4 PCs, 4 Laptops, 1 Servidor) | ✅ | 9 dispositivos finais conectados com cabo metálico. |
+| **Extra**: Endereçamento IP e Teste via `ping` (+10%) | ✅ | Todos os hosts configurados e se comunicando com sucesso. |
 
 ---
 
