@@ -58,15 +58,15 @@ Para a realização dos testes de comunicação via comando `ping`, foi configur
 
 | Dispositivo | Tipo | Interface | Endereço IP | Máscara de Sub-rede | Teste `ping` |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| **PC0** | Desktop | FastEthernet0 | `192.168.1.1` | `255.255.255.0` | ✅ Sucesso |
-| **PC1** | Desktop | FastEthernet0 | `192.168.1.2` | `255.255.255.0` | ✅ Sucesso |
-| **PC2** | Desktop | FastEthernet0 | `192.168.1.3` | `255.255.255.0` | ✅ Sucesso |
-| **PC3** | Desktop | FastEthernet0 | `192.168.1.4` | `255.255.255.0` | ✅ Sucesso |
-| **Laptop0** | Notebook | FastEthernet0 | `192.168.1.5` | `255.255.255.0` | ✅ Sucesso |
-| **Laptop1** | Notebook | FastEthernet0 | `192.168.1.6` | `255.255.255.0` | ✅ Sucesso |
-| **Laptop2** | Notebook | FastEthernet0 | `192.168.1.7` | `255.255.255.0` | ✅ Sucesso |
-| **Laptop3** | Notebook | FastEthernet0 | `192.168.1.8` | `255.255.255.0` | ✅ Sucesso |
-| **Server0** | Servidor | FastEthernet0 | `192.168.1.9` | `255.255.255.0` | ✅ Sucesso |
+| **PC0** | Desktop | FastEthernet0/1 | `192.168.1.1` | `255.255.255.0` | ✅ Sucesso |
+| **PC1** | Desktop | FastEthernet0/2 | `192.168.1.2` | `255.255.255.0` | ✅ Sucesso |
+| **PC2** | Desktop | FastEthernet0/3 | `192.168.1.3` | `255.255.255.0` | ✅ Sucesso |
+| **PC3** | Desktop | FastEthernet0/4 | `192.168.1.4` | `255.255.255.0` | ✅ Sucesso |
+| **Laptop0** | Notebook | FastEthernet0/5 | `192.168.1.5` | `255.255.255.0` | ✅ Sucesso |
+| **Laptop1** | Notebook | FastEthernet0/6 | `192.168.1.6` | `255.255.255.0` | ✅ Sucesso |
+| **Laptop2** | Notebook | FastEthernet0/7 | `192.168.1.7` | `255.255.255.0` | ✅ Sucesso |
+| **Laptop3** | Notebook | FastEthernet0/8 | `192.168.1.8` | `255.255.255.0` | ✅ Sucesso |
+| **Server0** | Servidor | FastEthernet0/9 | `192.168.1.9` | `255.255.255.0` | ✅ Sucesso |
 
 ---
 
